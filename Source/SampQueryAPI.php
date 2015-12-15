@@ -279,7 +279,7 @@ class SampQueryAPI
 		fread($this->rSocket, 11);
 		
 		$iRuleCount = ord(fread($this->rSocket, 2));
- 		$aReturn = array();
+ 		$aDetails = array();
 		
 		for($iIndex = 0; $iIndex < $iRuleCount; ++$iIndex)
 		{
